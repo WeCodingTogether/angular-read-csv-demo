@@ -1,0 +1,25 @@
+<head>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+
+<h2>product-heatmap works!</h2>
+
+<div *ngFor="let product of products">
+  <span>PartNo: {{product.partNo}}</span>
+  <span>PartName: {{product.partName}}</span>
+  <span>Category: {{product.category}}</span>
+  <span>Group: {{product.group}}</span>
+  <span>Value: {{product.value}}</span>
+</div>
+
+<!-- <highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="chartOptions"
+  style="width: 100%; height: 400px; display: block;">
+</highcharts-chart> -->
+
+
